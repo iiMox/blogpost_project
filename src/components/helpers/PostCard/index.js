@@ -26,7 +26,11 @@ const PostCard = ({ postId, title, content, images, owner, likes, date }) => {
     );
     const [show, setShow] = useState(false);
 
-    const [postOwner, setPostOwner] = useState({ fullname: "", username: "" });
+    const [postOwner, setPostOwner] = useState({
+        fullname: "",
+        username: "",
+        avatar: null,
+    });
 
     const [activeIndex, setActiveIndex] = useState(0);
 

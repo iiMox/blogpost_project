@@ -11,6 +11,7 @@ const Comment = ({ comment, date, owner }) => {
     const [commentOwnern, setCommentOwner] = useState({
         fullname: "",
         username: "",
+        avatar: null,
     });
 
     const getOwner = async () => {
