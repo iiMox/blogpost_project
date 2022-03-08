@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api/posts"
-  to = "https://project-blogpost.herokuapp.com/api/posts"
+  from = "/api"
+  to = "https://project-blogpost.herokuapp.com/api"
   status = 200
   
