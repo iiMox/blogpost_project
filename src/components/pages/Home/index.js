@@ -13,9 +13,7 @@ const Home = () => {
 
     const getPosts = async () => {
         try {
-            const postsArray = await axios.get(
-                "https://project-blogpost.herokuapp.com/api/posts"
-            );
+            const postsArray = await axios.get("/api/posts");
 
             if (
                 posts.length !== postsArray.length &&

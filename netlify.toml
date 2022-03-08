@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/posts"
+  to = "https://project-blogpost.herokuapp.com/api/posts"
+  status = 200
+  
