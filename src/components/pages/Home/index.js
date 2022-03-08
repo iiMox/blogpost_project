@@ -27,7 +27,6 @@ const Home = () => {
     };
 
     useEffect(() => {
-        setUser(JSON.parse(localStorage.getItem("User")));
         getPosts();
     });
 
