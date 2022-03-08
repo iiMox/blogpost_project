@@ -20,7 +20,7 @@ const Profile = () => {
 
     const [current, setCurrent] = useState("Posts");
 
-    const [avatar, setAvatar] = useState(0);
+    const [avatar, setAvatar] = useState(null);
 
     const [show, setShow] = useState(false);
 

@@ -43,14 +43,16 @@ const Post = () => {
     };
 
     useEffect(() => {
-        const headerSize = document.querySelector(
-            ".post-page .header-user"
-        ).offsetHeight;
         if (user === null) {
+            const headerSize =
+                document.querySelector(".post-page .header").offsetHeight;
             const message = document.querySelector(".post-page .message");
 
             message.style.height = window.innerHeight - headerSize + "px";
         } else {
+            const headerSize = document.querySelector(
+                ".post-page .header-user"
+            ).offsetHeight;
             const content = document.querySelector(".post-page .content");
 
             content.style.minHeight = window.innerHeight - headerSize + "px";

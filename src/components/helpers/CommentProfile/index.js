@@ -11,12 +11,12 @@ const CommentProfile = ({ comment, date, owner, post }) => {
     const [commentOwnern, setCommentOwner] = useState({
         fullname: "",
         username: "",
+        avatar: null,
     });
 
     const [postOwner, setPostOwner] = useState({
         fullname: "",
         username: "",
-        avatar: null,
     });
 
     const getOwner = async () => {
@@ -49,7 +49,6 @@ const CommentProfile = ({ comment, date, owner, post }) => {
             setPostOwner({
                 username: postOwner.data.username,
                 fullname: postOwner.data.fullname,
-                avatar: postOwner.data.avatar,
             });
         } catch (e) {
             console.log(e);
