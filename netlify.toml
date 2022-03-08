@@ -2,4 +2,9 @@
   from = "/api/*"
   to = "https://project-blogpost.herokuapp.com/api/:splat"
   status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "https://google.com"
+  status = 200
   
