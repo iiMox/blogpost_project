@@ -204,7 +204,7 @@ const Profile = () => {
                                             title={post.title}
                                             content={post.content}
                                             images={post.images}
-                                            date={post.createAt}
+                                            date={post.createdAt}
                                             likes={post.likes}
                                             owner={post.owner}
                                         />
@@ -219,6 +219,7 @@ const Profile = () => {
                                         comment={comment.comment}
                                         owner={comment.owner}
                                         post={comment.post}
+                                        date={comment.createdAt}
                                     />
                                 );
                             })

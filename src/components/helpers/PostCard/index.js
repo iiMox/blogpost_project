@@ -277,7 +277,7 @@ const PostCard = ({ postId, title, content, images, owner, likes, date }) => {
                                 return (
                                     <Comment
                                         comment={comment.comment}
-                                        date={comment.createAt}
+                                        date={comment.createdAt}
                                         owner={comment.owner}
                                         key={comment._id}
                                     />
