@@ -75,7 +75,7 @@ const PostCard = ({ postId, title, content, images, owner, likes, date }) => {
 
     const addComment = async () => {
         try {
-            const res = await axios.post(`/api/comments`, newComment, {
+            await axios.post(`/api/comments`, newComment, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("Token")}`,
                 },
@@ -90,7 +90,7 @@ const PostCard = ({ postId, title, content, images, owner, likes, date }) => {
     const likePost = async () => {
         try {
             if (!liked) {
-                const res = axios.patch(
+                await axios.patch(
                     `/api/posts/liked/${postId}`,
                     {},
                     {
@@ -103,7 +103,7 @@ const PostCard = ({ postId, title, content, images, owner, likes, date }) => {
                 );
                 setLiked(true);
             } else {
-                const res = axios.patch(
+                await axios.patch(
                     `/api/posts/disliked/${postId}`,
                     {},
                     {

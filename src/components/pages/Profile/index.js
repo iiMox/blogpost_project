@@ -97,7 +97,7 @@ const Profile = () => {
             setError("Email is required.");
         } else {
             try {
-                const res = await axios.patch("/api/users/me", updatedUser, {
+                await axios.patch("/api/users/me", updatedUser, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
                             "Token"

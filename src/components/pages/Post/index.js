@@ -31,7 +31,7 @@ const Post = () => {
 
     const createPost = async () => {
         try {
-            const res = await axios.post("/api/posts", post, {
+            await axios.post("/api/posts", post, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("Token")}`,
                 },

@@ -1,15 +1,13 @@
 import React from "react";
-import axois from "axios";
 import { useEffect, useState } from "react";
 import "./Home.css";
 import Header from "../../helpers/Header";
 import HeaderUser from "../../helpers/HeaderUser";
 import PostCard from "../../helpers/PostCard";
-import backgroundImg from "../../../images/homepage background.png";
 import axios from "axios";
 
 const Home = () => {
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem("User")));
+    const [user] = useState(JSON.parse(localStorage.getItem("User")));
 
     const [posts, setPosts] = useState([]);
 
