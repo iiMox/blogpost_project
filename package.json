@@ -38,10 +38,4 @@
       "last 1 safari version"
     ]
   },
-  "proxy": {
-    "/api": {
-      "target": "https://project-blogpost.herokuapp.com/api",
-      "changeOrigin": true
-    }
-  }
 }
