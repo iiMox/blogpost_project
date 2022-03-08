@@ -1,0 +1,284 @@
+.post-page .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.post-page .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding: 20px 0;
+}
+
+.post-page .content form {
+    background-color: #f7f7f7;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-page .content form h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.post-page .content form .hr {
+    width: 50%;
+    margin-bottom: 15px;
+    height: 3px;
+}
+
+.post-page .content form input {
+    width: 75%;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+}
+
+.post-page .content form input:focus {
+    border-color: #5ce1e6;
+}
+
+.post-page .content form input::placeholder,
+.post-page .content form textarea::placeholder {
+    color: #bbb;
+}
+
+.post-page .content form textarea {
+    width: 75%;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    overflow: auto;
+    color: #333;
+    font-size: 20px;
+    resize: none;
+    overflow: auto;
+}
+
+.post-page .content form textarea:focus {
+    border-color: #5ce1e6;
+}
+
+.post-page .content form .textarea:empty:before {
+    content: attr(data-placeholder);
+    color: #bbb;
+}
+
+.post-page .content .images-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.post-page .content .images-section .selected-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.post-page .content .images-section .upload-container {
+    text-align: center;
+}
+
+.post-page .content .images-section .upload-button {
+    padding: 0 20px;
+    border: none;
+    background: #e7e7e7;
+    color: #a1a1a1;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+.post-page .content .images-section .upload-button:focus {
+    outline: none;
+}
+
+.post-page .content form > button {
+    background-color: #5ce1e6;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    width: 20%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-page .content form > button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .post-page .content form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .post-page .content form .hr {
+        width: 90%;
+    }
+
+    .post-page .content form input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content form textarea {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content .images-section {
+        width: 90%;
+    }
+
+    .post-page .content .images-section .selected-images {
+        width: 50%;
+    }
+
+    .post-page .content .images-section .upload-button {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .post-page .content form > button {
+        font-size: 17px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .post-page .content form {
+        width: 75%;
+        padding: 10px;
+    }
+
+    .post-page .content form .hr {
+        width: 90%;
+    }
+
+    .post-page .content form input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content form textarea {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content .images-section {
+        width: 90%;
+    }
+
+    .post-page .content .images-section .upload-button {
+        padding: 10px 15px;
+    }
+
+    .post-page .content form > button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .post-page .content form {
+        width: 75%;
+        padding: 10px;
+    }
+
+    .post-page .content form .hr {
+        width: 90%;
+    }
+
+    .post-page .content form input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content form textarea {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .post-page .content .images-section {
+        width: 90%;
+    }
+
+    .post-page .content .images-section .upload-button {
+        padding: 10px 15px;
+    }
+
+    .post-page .content form > button {
+        width: 30%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .post-page .content form {
+        width: 65%;
+        padding: 10px;
+    }
+
+    .post-page .content form .hr {
+        width: 80%;
+    }
+
+    .post-page .content form input {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .post-page .content form textarea {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .post-page .content .images-section {
+        width: 80%;
+    }
+
+    .post-page .content .images-section .upload-button {
+        padding: 10px 15px;
+    }
+
+    .post-page .content form > button {
+        width: 25%;
+    }
+}

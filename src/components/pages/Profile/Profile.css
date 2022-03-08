@@ -1,0 +1,656 @@
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+.profile .content {
+    width: 75%;
+    margin: 20px auto;
+    z-index: 2;
+}
+
+.profile .content .profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile .content .profile-info img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile .content .profile-info .overview {
+    color: #333;
+    flex-grow: 1;
+}
+
+.profile .content .profile-info .overview .profile-name {
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile .content .profile-info .overview .profile-name img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.profile .content .profile-info .overview .profile-name img:hover {
+    transform: rotate(180deg);
+}
+
+.profile .content .profile-info .overview .title {
+    font-size: 25px;
+    color: #aaa;
+    font-weight: 500;
+}
+
+.profile .content p {
+    font-size: 23px;
+    color: #333;
+    letter-spacing: 0.8px;
+    line-height: 35px;
+    width: 75%;
+    padding-left: 15px;
+}
+
+.profile .content .profile-stats {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .content .profile-stats ul {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 19px;
+    border-bottom: 2px solid #5ce1e6;
+    padding-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+.profile .content .profile-stats ul li {
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.profile .content .profile-stats .content-box {
+    width: 50%;
+}
+
+.profile .content .profile-stats .content-box .comment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.profile .content .profile-stats .content-box .comment img {
+    margin-right: 10px;
+}
+
+.profile .content .profile-stats .content-box .comment p {
+    padding-left: 0;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.profile .update-container {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    overflow: auto;
+    opacity: 0;
+}
+
+.profile .update-container .edit-box {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #5ce1e6;
+    padding: 0 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.profile .update-container .edit-box h2 {
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.profile .update-container .edit-box .hr {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.profile .update-container .edit-box form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.profile .update-container .edit-box form label {
+    color: #333;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.profile .update-container .edit-box form input,
+.profile .update-container .edit-box form textarea {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    outline: none;
+}
+
+.profile .update-container .edit-box form textarea {
+    height: 100px;
+    resize: none;
+    overflow: auto;
+}
+
+.profile .update-container .edit-box form .avatars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .update-container .edit-box form .avatars img {
+    width: 100px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.profile .update-container .edit-box form .avatars img:first-of-type {
+    margin-right: 20px;
+}
+
+.profile .update-container .edit-box form input:focus,
+.profile .update-container .edit-box form textarea:focus {
+    border-color: #5ce1e6;
+}
+
+.profile .update-container .edit-box form .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.profile .update-container .edit-box form .buttons button {
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile .update-container .edit-box form .buttons button img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.no-data {
+    text-align: center;
+    color: #333;
+    font-size: 23px;
+}
+
+.profile .error {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .profile .content {
+        width: 90%;
+    }
+
+    .profile .content .profile-info {
+        flex-direction: column;
+    }
+
+    .profile .content .profile-info > img {
+        width: 125px;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile .content .profile-info .overview .profile-name img {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .profile .content .profile-info .overview .title {
+        font-size: 24px;
+    }
+
+    .profile .content p {
+        width: 90%;
+        padding-left: 5%;
+        font-size: 21px;
+    }
+
+    .profile .content .profile-stats {
+        margin-top: 40px;
+    }
+
+    .profile .content .profile-stats ul {
+        width: 90%;
+        justify-content: space-around;
+        font-size: 17px;
+    }
+
+    .profile .content .profile-stats .content-box {
+        width: 90%;
+    }
+
+    .profile .content .profile-stats .content-box .comment img {
+        margin-right: 10px;
+    }
+
+    .profile .content .profile-stats .content-box .comment p {
+        padding-left: 0;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box {
+        padding: 0;
+        width: 80%;
+    }
+
+    .profile .update-container .edit-box h2 {
+        font-size: 25px;
+    }
+
+    .profile .update-container .edit-box .hr {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form label {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box form input,
+    .profile .update-container .edit-box form textarea {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .profile .update-container .edit-box form .avatars img {
+        width: 60px;
+    }
+
+    .profile .update-container .edit-box form .avatars img:first-of-type {
+        margin-right: 10px;
+    }
+
+    .profile .update-container .edit-box form .buttons button {
+        width: 45%;
+        font-size: 17px;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+    }
+
+    .profile .update-container .edit-box form .buttons button img {
+        width: 15px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .profile .content {
+        width: 90%;
+    }
+
+    .profile .content .profile-info {
+        flex-direction: column;
+    }
+
+    .profile .content .profile-info > img {
+        width: 125px;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile .content .profile-info .overview .profile-name img {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .profile .content .profile-info .overview .title {
+        font-size: 24px;
+    }
+
+    .profile .content p {
+        width: 90%;
+        padding-left: 5%;
+        font-size: 21px;
+    }
+
+    .profile .content .profile-stats {
+        margin-top: 40px;
+    }
+
+    .profile .content .profile-stats ul {
+        width: 90%;
+        justify-content: space-around;
+        font-size: 17px;
+    }
+
+    .profile .content .profile-stats .content-box {
+        width: 90%;
+    }
+
+    .profile .content .profile-stats .content-box .comment img {
+        margin-right: 10px;
+    }
+
+    .profile .content .profile-stats .content-box .comment p {
+        padding-left: 0;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box {
+        padding: 0;
+        width: 80%;
+    }
+
+    .profile .update-container .edit-box h2 {
+        font-size: 25px;
+    }
+
+    .profile .update-container .edit-box .hr {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form label {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box form input,
+    .profile .update-container .edit-box form textarea {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .profile .update-container .edit-box form .avatars img {
+        width: 60px;
+    }
+
+    .profile .update-container .edit-box form .avatars img:first-of-type {
+        margin-right: 10px;
+    }
+
+    .profile .update-container .edit-box form .buttons button {
+        width: 45%;
+        font-size: 17px;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+    }
+
+    .profile .update-container .edit-box form .buttons button img {
+        width: 15px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .profile .content {
+        width: 80%;
+    }
+
+    .profile .content .profile-info {
+        flex-direction: column;
+    }
+
+    .profile .content .profile-info > img {
+        width: 125px;
+        height: 125px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile .content .profile-info .overview .profile-name img {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .profile .content .profile-info .overview .title {
+        font-size: 24px;
+    }
+
+    .profile .content p {
+        width: 90%;
+        padding-left: 5%;
+        font-size: 21px;
+    }
+
+    .profile .content .profile-stats {
+        margin-top: 40px;
+    }
+
+    .profile .content .profile-stats ul {
+        width: 90%;
+        justify-content: space-around;
+        font-size: 17px;
+    }
+
+    .profile .content .profile-stats .content-box {
+        width: 90%;
+    }
+
+    .profile .content .profile-stats .content-box .comment img {
+        margin-right: 10px;
+    }
+
+    .profile .content .profile-stats .content-box .comment p {
+        padding-left: 0;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box {
+        padding: 0;
+        width: 80%;
+    }
+
+    .profile .update-container .edit-box h2 {
+        font-size: 25px;
+    }
+
+    .profile .update-container .edit-box .hr {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form label {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box form input,
+    .profile .update-container .edit-box form textarea {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .profile .update-container .edit-box form .avatars img {
+        width: 60px;
+    }
+
+    .profile .update-container .edit-box form .avatars img:first-of-type {
+        margin-right: 10px;
+    }
+
+    .profile .update-container .edit-box form .buttons button {
+        width: 45%;
+        font-size: 17px;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+    }
+
+    .profile .update-container .edit-box form .buttons button img {
+        width: 15px;
+        margin-right: 5px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .profile .content .profile-info {
+        flex-direction: row;
+    }
+
+    .profile .content .profile-info > img {
+        width: 125px;
+        height: 125px;
+        margin-right: 20px;
+    }
+
+    .profile .content .profile-info .overview .profile-name img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile .content .profile-info .overview .title {
+        font-size: 24px;
+    }
+
+    .profile .content p {
+        width: 90%;
+        padding-left: 5px;
+        font-size: 21px;
+    }
+
+    .profile .content .profile-stats {
+        margin-top: 40px;
+    }
+
+    .profile .content .profile-stats ul {
+        width: 90%;
+        justify-content: space-around;
+        font-size: 17px;
+    }
+
+    .profile .content .profile-stats .content-box {
+        width: 90%;
+    }
+
+    .profile .content .profile-stats .content-box .comment img {
+        margin-right: 10px;
+    }
+
+    .profile .content .profile-stats .content-box .comment p {
+        padding-left: 0;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box {
+        padding: 0;
+        width: 70%;
+    }
+
+    .profile .update-container .edit-box h2 {
+        font-size: 25px;
+    }
+
+    .profile .update-container .edit-box .hr {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form {
+        width: 90%;
+    }
+
+    .profile .update-container .edit-box form label {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .profile .update-container .edit-box form input,
+    .profile .update-container .edit-box form textarea {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .profile .update-container .edit-box form .avatars img {
+        width: 60px;
+    }
+
+    .profile .update-container .edit-box form .avatars img:first-of-type {
+        margin-right: 10px;
+    }
+
+    .profile .update-container .edit-box form .buttons button {
+        width: 45%;
+        font-size: 17px;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+    }
+
+    .profile .update-container .edit-box form .buttons button img {
+        width: 15px;
+        margin-right: 5px;
+    }
+}

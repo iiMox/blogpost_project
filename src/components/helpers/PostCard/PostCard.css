@@ -1,0 +1,305 @@
+.post-card {
+    width: 100%;
+    text-align: left;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.post-card .owner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-card .owner img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.post-card .owner .owner-info {
+    color: #333;
+    flex-grow: 2;
+}
+
+.post-card .owner .owner-info .owner-name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card .owner .owner-info .owner-name .date {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.post-card h2 {
+    font-size: 25px;
+    color: #333;
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+}
+
+.post-card .post-content {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+.post-card .images {
+    margin: 40px -20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(3, 3, 3, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.post-card .images .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.post-card .images .control .prev,
+.post-card .images .control .next {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.post-card .images .control .prev img,
+.post-card .images .control .next img {
+    width: 20px;
+}
+
+.post-card .action-bar {
+    width: 25%;
+    margin-left: 37.5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    justify-content: space-around;
+}
+
+.post-card .action-bar img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.post-card .post-comments {
+    margin-top: 20px;
+}
+
+.post-card .post-comments .add-comment {
+    margin-bottom: 20px;
+}
+
+.post-card .post-comments .add-comment img {
+    width: 40px;
+}
+
+.post-card .post-comments .add-comment form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card .post-comments .add-comment form input {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font: #333;
+    font-size: 18px;
+    width: 60%;
+    border: 1px solid #fff;
+}
+
+.post-card .post-comments .add-comment form input:focus {
+    border: 1px solid #5ce1e6;
+}
+
+.post-card .post-comments .add-comment form button {
+    width: 25%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5ce1e6;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post-card .post-comments .hr {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 20px;
+}
+
+.post-card .post-comments .comments {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.post-card .post-comments .comments .no-comments {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 575.98px) {
+    .post-card {
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .post-card .owner img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .post-card .owner .owner-info .owner-name {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    .post-card .owner .owner-info .owner-name .date {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .post-card h2 {
+        font-size: 23px;
+    }
+
+    .post-card .post-content {
+        font-size: 19px;
+    }
+
+    .post-card .images {
+        margin: 40px -10px 0;
+    }
+
+    .post-card .images .control {
+        padding: 0 10px;
+    }
+
+    .post-card .images .control .prev,
+    .post-card .images .control .next {
+        padding: 5px;
+    }
+
+    .post-card .images .control .prev img,
+    .post-card .images .control .next img {
+        width: 15px;
+    }
+
+    .post-card .action-bar {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    .post-card .action-bar img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .post-card .post-comments .add-comment img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    .post-card .post-comments .add-comment form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post-card .post-comments .add-comment form input {
+        padding: 10px 5px;
+        font: #333;
+        font-size: 15px;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .post-card .post-comments .add-comment form button {
+        width: 70%;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .post-card .post-comments .hr {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .post-card .action-bar {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .post-card .post-comments .add-comment form input {
+        width: 60%;
+    }
+
+    .post-card .post-comments .add-comment form button {
+        width: 25%;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .post-card .post-comments .hr {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}

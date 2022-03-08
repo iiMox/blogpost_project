@@ -1,0 +1,138 @@
+.loginPage .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.loginPage .content > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.loginPage .content .signup {
+    background-color: #f7f7f7;
+}
+
+.loginPage .content > div h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.loginPage .content > div form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.loginPage .content > div form label {
+    color: #333;
+    letter-spacing: 0.8px;
+    font-size: 17px;
+    margin: 10px 0;
+    margin-left: 12.5%;
+}
+
+.loginPage .content > div form input {
+    width: 75%;
+    margin: 10px 12.5%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #333;
+}
+
+.loginPage .content > div form input:focus {
+    border-color: #5ce1e6;
+}
+
+.loginPage .content > div form button {
+    width: 50%;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #333;
+    margin-left: 25%;
+}
+
+.loginPage .content > div.signup form button {
+    background-color: #5ce1e6;
+    border: none;
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .loginPage .content {
+        flex-direction: column;
+    }
+
+    .loginPage .content > div {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .loginPage .content .signup {
+        border-top: 1px solid #ccc;
+    }
+
+    .loginPage .content > div form label {
+        margin-left: 10%;
+    }
+
+    .loginPage .content > div form input {
+        width: 80%;
+        margin: 10px 10%;
+    }
+
+    .loginPage .content > div form button {
+        width: 60%;
+
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .loginPage .content {
+        flex-direction: column;
+    }
+
+    .loginPage .content > div {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .loginPage .content .signup {
+        border-top: 1px solid #ccc;
+    }
+
+    .loginPage .content > div form label {
+        margin-left: 10%;
+    }
+
+    .loginPage .content > div form input {
+        width: 80%;
+        margin: 10px 10%;
+    }
+
+    .loginPage .content > div form button {
+        width: 60%;
+
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}

@@ -1,0 +1,98 @@
+.user-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-card img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.user-card .profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-card .profile-info .overview {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 500;
+    align-items: center;
+    color: #a7a7a7;
+}
+
+.user-card .profile-info .overview .profile-name {
+    font-size: 20px;
+    color: #333;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.user-card .profile-info p {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+@media (max-width: 575.98px) {
+    .user-card img {
+        width: 50px;
+    }
+
+    .user-card .profile-info .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .user-card .profile-info .overview .profile-name {
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .user-card .profile-info p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .user-card img {
+        width: 70px;
+    }
+
+    .user-card .profile-info .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .user-card .profile-info .overview .profile-name {
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .user-card .profile-info p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .user-card img {
+        width: 90px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
