@@ -9,7 +9,7 @@ import UploadImage from "../../helpers/UploadImage";
 import addImage from "../../../images/add.png";
 
 const Post = () => {
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem("User")));
+    const user = JSON.parse(localStorage.getItem("User"));
 
     const [images, setImages] = useState([]);
 

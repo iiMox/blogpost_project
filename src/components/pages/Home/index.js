@@ -7,7 +7,7 @@ import PostCard from "../../helpers/PostCard";
 import axios from "axios";
 
 const Home = () => {
-    const [user] = useState(JSON.parse(localStorage.getItem("User")));
+    const user = JSON.parse(localStorage.getItem("User"));
 
     const [posts, setPosts] = useState([]);
 
@@ -27,6 +27,7 @@ const Home = () => {
     };
 
     useEffect(() => {
+        setUser(JSON.parse(localStorage.getItem("User")));
         getPosts();
     });
 

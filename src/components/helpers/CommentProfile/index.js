@@ -19,8 +19,6 @@ const CommentProfile = ({ comment, date, owner, post }) => {
         avatar: "",
     });
 
-    const [loaded, setLoaded] = useState(false);
-
     const getOwner = async () => {
         try {
             const user = await axios.get(`/api/users/${owner}`);
@@ -59,10 +57,8 @@ const CommentProfile = ({ comment, date, owner, post }) => {
     };
 
     useEffect(() => {
-        if (!loaded) {
-            getOwner();
-            getPostOwner();
-        }
+        getOwner();
+        getPostOwner();
     });
 
     return (
