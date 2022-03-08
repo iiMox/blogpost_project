@@ -14,7 +14,7 @@ import maleAvatar from "../../../images/male.svg";
 import femaleAvatar from "../../../images/female.svg";
 
 const Profile = () => {
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState({ avatar: null });
 
     const [updatedUser, setUpdatedUser] = useState(user);
 
